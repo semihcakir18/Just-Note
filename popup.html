@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <!-- Current page notes view -->
+  <div id="note-view">
+    <div class="header">
+      <div class="url-display" id="current-url" title=""></div>
+      <button id="show-all-btn" title="View all notes">&#128209;</button>
+    </div>
+    <textarea id="note-editor" placeholder="Type your notes here..."></textarea>
+    <div class="status" id="save-status"></div>
+  </div>
+
+  <!-- All notes view -->
+  <div id="all-notes-view" class="hidden">
+    <div class="header">
+      <button id="back-btn" title="Back to current page">&larr;</button>
+      <div class="view-title">All Notes</div>
+    </div>
+    <div id="notes-list"></div>
+    <div id="no-notes" class="hidden">No notes saved yet.</div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
